@@ -48,32 +48,58 @@
     opacity:0.7;
   }
   .tweet-button{
-    background-color: rgb(91, 164, 227);
+    background-color: rgb(49, 141, 228);
     color: white;
     border-radius: 18px;
     border-style: none;
     font-weight: bold;
     margin-right: 10px;
-    padding-top:15px;
-    padding-bottom:15x;
-    padding-left:13x;
-    padding-right:13x;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:13px;
+    padding-right:13px;
     cursor:pointer;
     transition: box-shadow 0.15s;
     vertical-align: top;
+    transition: box-shadow 0.15s, opacity 0.15s;
   }
   .tweet-button:hover{
     box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
   }
+  .tweet-button:active{
+    opacity: 0.6;
+  }
+
+
   .uber-button{
     background-color: black;
     color: white;
     border-style: none;
-    height: 33px;
-    width: 95px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:13px;
+    padding-right:13px;
     font-size: 12px;
     margin-right: 10px;
+    cursor:pointer;
+    transition: opacity 0.15s, padding-top 0.15s,
+    padding-bottom 0.15s,padding-left 0.15s,padding-right 0.15s;
   }
+
+  .uber-button:hover{
+    opacity: 0.95;
+  }
+
+  .uber-button:active{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px
+  }
+
+
+
+  
   .amazon-button{
     background-color: rgb(255,216,20);
     color: black;
@@ -139,6 +165,10 @@
 </style>
 
 
+<body>
+<head>
+  <h1> BUTTONS   </h1>
+</head>
 <button class = "subscribe-button">
   SUBSCRIBE
 </button>
@@ -178,3 +208,5 @@
 <button class ="linkedin-save-button">
   Save
 </button>
+
+</body>
